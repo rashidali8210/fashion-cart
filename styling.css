@@ -1,0 +1,275 @@
+*
+{
+    font-family: 'poppins',sans-serif;
+    /* padding: 10%; */
+    box-sizing: border-box;
+    padding: 0%;
+}
+body{
+    min-height: 100vh;
+}
+
+.form input
+{
+    padding: 2%,none,2%,none;
+}
+.form
+{ padding: 2% 2% 2% 2%;
+  float: center;
+  margin-right: 50px;
+  background-color: lightblue;
+  margin-top: 3%;
+  width: auto;
+  height: auto;
+}
+.form submit{
+
+    text-align: center;
+}
+.upper
+{
+/* columns: 2; */
+    background-color: brown;
+}
+.latest-box
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+    margin: 20px 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    width:200px;
+    background-color: #ffffff ;
+ cursor: pointer;
+}
+ul img{
+    
+    /* padding: 2% 2% 2% 2%; */
+    width: 200px;
+    height: 200px;
+    /* border-style: dashed; */
+    /* box-sizing: border-box;     */
+}
+.title{
+    background-color: brown;
+    width: 100%;
+    height: 5px;
+    border : 1px solid grey;
+    display: grid;
+    /* columns: 3; */
+    grid-template-columns: 10% 70% 10%; 
+    column-gap: 10px;
+    padding-bottom: 5%;
+}
+.title img{
+    cursor: pointer;
+    width: 50px;
+    padding: 2% 2% 2% 2%;
+    
+    
+}
+.btn-cart  
+{  
+  margin-left: 83%;
+    float: right;
+    position: fixed;
+    
+}
+.main{
+ 
+columns: 3;  
+margin: 0% 10% 0% 10%;
+
+}
+   
+.user
+{ 
+    padding: 12% 12% 12% 12%;
+    margin:  auto;
+}
+h1
+{ 
+     font-family: cursive;
+     font-size: 150%;
+     font-style: italic;
+     background: white;
+}
+h2{
+    font-display: yellow;
+    font-family: cursive;
+    font-style: italic;
+}
+.navigation
+{
+position: fixed;
+width: 290px;
+height: 100%;
+background: #3e0748;
+transition: 0.5s ease;
+overflow:scroll;
+/* display: none; */
+}
+.navigation .hover
+{ 
+width: 200px;
+}
+.navigation ul
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+}
+.navigation ul li
+{
+    position: relative;
+    width: 100%;
+    list-style: none;
+
+}
+.navigation ul li a
+
+{
+    position:relative;
+    display:black;
+    width:100%;
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+}
+.navigation ul li:hover
+{
+    background: #f52c6fe0;
+}
+.navigation ul li a i
+{
+    position: relative;
+    display: black;
+    min-width: 60px;
+    height: 70px;
+    line-height: 70px;
+}
+    #menu {
+        columns: 2 ;
+      height: auto;
+      background-color: blanchedalmond;
+    }
+    .navigation ul li 
+{
+    position: relative;
+    display: black;
+    min-width: 60px;
+    height: 70px;
+    line-height: 70px;
+     margin-left: 4%; 
+ }
+    #btn{
+        background-color: white;
+        text-align: center;
+        width: 45px;
+        height: 45px;
+        font-size: 40px;
+        margin-left: 2%;
+        /* position:fixed ; */
+    
+       
+    }
+#btn :active
+{ 
+    background: #ea1d63;
+    display: none;
+    
+}
+#btn :before
+{
+    content: \f0c9;
+    font-family:fontAwesome;
+    position: absolute;
+    width:100%;
+    height: 100%;
+    line-height:60px;
+    text-align:center;
+    font-size:24px;
+    color:#fff;
+}
+button.active:before
+{
+    content: '\f00d';
+}
+
+/* #btn{
+    display: flex;
+} */
+@media(max-width:767px)
+{
+    .title{
+        background-color: brown;
+        width: 100%;
+        height:30px;
+        border : 1px solid grey;
+        display: grid;
+        grid-template-columns: 10% 50% 10%;
+        column-gap: 30px;
+        padding-bottom: 22%;
+    }
+ul img{
+     display: grid;
+    padding: 2% 2% 2% 2%;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
+.main{
+ columns: 1;
+ background-color: white;
+ margin-left: 5%;
+}
+    .navigation
+    {
+        left: 2px;
+    }
+     .navigation.toggle.active{
+        left:0px;
+        width:100%
+    } 
+}
+
+
+.toggle
+{
+    top: 0;
+    right: 0;
+    width:60px;
+    height:60px;
+    background: #f52c6fe0;
+    cursor: pointer;
+    text-align: right;}
+    .toggle.active
+{
+    background: #ea1d63;
+}
+.toggle:before
+{
+    content: \f0c9;
+    font-family:fontAwesome;
+    position: absolute;
+    width:100%;
+    height: 100%;
+    line-height:60px;
+    text-align:center;
+    font-size:24px;
+    color:#fff;
+}
+.toggle.active:before
+{
+    content: '\f00d';
+}
+button{
+    background-color: rgba(216, 235, 108, 0.521);
+    font-style: BOLD;
+    cursor: pointer;
+}
